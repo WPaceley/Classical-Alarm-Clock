@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<!--If you've made it this far, you're already awake.-->
+    <meta charset="utf-8" />
+    <title>Classical Alarm Clock</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/alarm.js"></script>
+    <link href="css/alarmstyle.css" rel="stylesheet">
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-53774424-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body onload="alarmStatus(); setInterval('alarmStatus()', 500)">
+	<audio controls autoplay id="alarm">
+		<source src="alarms/tannhauser.mp3" type="audio/mpeg">
+		Your browser does not support the alarm audio element. Sorry!
+	</audio>
+    <div class="wrapper">   
+       <h1>Wake Up!</h1>
+	   <h2>Drag and Drop the Antonyms</h2>
+
+	   <!---------------Draggables------------------->
+	   <h3>Drag These</h3>
+	   <ul class="draggables">
+		  <li id="draggable" class="ui-widget-content">
+              <div><br />One</div>
+		  </li>
+
+		  <li id="draggable2" class="ui-widget-content">
+              <div>Two</div>
+		  </li>
+
+		  <li id="draggable3" class="ui-widget-content">
+              <div>Three</div>
+		  </li>
+
+		  <li id="draggable4" class="ui-widget-content">
+              <div>Four</div>
+		  </li>
+
+		  <li id="draggable5" class="ui-widget-content">
+              <div>Five</div>
+		  </li>
+	   </ul>
+        <!-------------------Droppables-------------------->
+	   <h3>Drop Here</h3>
+	   <ul class="droppables">
+		  <li id="droppable" class="ui-widget-header">
+              <div>One</div>
+		  </li>
+
+		  <li id="droppable2" class="ui-widget-header">
+              <div>Two</div>
+		  </li>
+
+		  <li id="droppable3" class="ui-widget-header">
+              <div>Three</div>
+		  </li>
+
+		  <li id="droppable4" class="ui-widget-header">
+              <div>Four</div>
+		  </li>
+
+		  <li id="droppable5" class="ui-widget-header">
+              <div>Five</div>
+		  </li>
+	   </ul>
+	</div>
+    
+	<footer>
+        
+		<div>Classical Alarm developed by <a href="http://arpegg.io" target="_blank">William Paceley</a></div>
+        
+	</footer>
+</body>
+</html>

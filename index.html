@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<!-- Hi! <(^-^)> Thanks for checking out my site.-->
+    <!--Think this is cool and want to chat? PaceleyWB@gmail.com-->
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Classical Alarm Clock</title>
+	
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+	<script src="js/jquery/jquery.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+    <script src="js/globalize.js"></script>
+	<script src="js/clock.js"></script>
+	
+	<!--Load this last to override any other styles-->
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-53774424-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<body onload="run(); setInterval('run()', 500)">
+	<div class="wrapper">
+        
+		<div id="clock"></div>
+        
+		<div class="setting-wrapper">
+            
+			<input id="spinner" name="spinner" value="">
+            
+			<form class="form-wrapper">
+                
+				<div id="alarm-status">
+                    
+					<input type="radio" id="alarm-on" name="radio"><label for="alarm-on" onclick="on();">Alarm On</label>
+                    
+					<input type="radio" id="alarm-off" name="radio" checked="checked" onclick="off();"><label for="alarm-off">Alarm Off</label>
+                    
+				</div>
+			</form>
+            
+		</div>
+        
+	</div>
+    
+	<footer>
+        
+		<div>Classical Alarm developed by <a href="http://arpegg.io" target="_blank">William Paceley</a></div>
+        
+	</footer>
+</body>
+</html>

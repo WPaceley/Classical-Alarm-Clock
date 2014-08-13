@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+	background-color: #041f32;
+    color: #fff;
+}
+
+.wrapper {
+    position: fixed;
+	margin: auto;
+	width: 900px;
+    height: 600px;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -450px;	
+    text-align: center;
+}
+
+h1 {
+    font-family: "Bebas Neue", Arial, sans-serif;
+    font-size: 100px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+h3 {
+    font-family: "Bebas Neue", Arial, sans-serif;
+    font-size: 25px;
+}
+ul {
+    list-style-type: none;
+    display: block;
+    margin-bottom: 150px;
+}
+
+li {
+    float: left;
+    width: 80px;
+    height: 80px;
+    padding: 0.5em;
+    margin: 10px 10px 10px 10px;
+}
+
+.ui-widget-content {
+    border: none;
+}
+
+.draggables {
+    margin-left: 150px;
+}
+
+.draggables li {
+    background: none;
+    color: #fff;
+    border: 2px solid greenyellow;
+    text-align: center;
+    border-radius: 50px;
+    width: 65px;
+    height: 65px;
+    cursor: grab;
+    cursor: -webkit-grab;
+}
+
+.draggables li div {
+    padding-top: 25px;
+}
+
+.draggables li.ui-draggable-dragging {
+    border: 2px solid orange !important;
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.droppables {
+    margin-left: 90px;
+}
+
+
+.droppables li {
+    border: 2px solid orange;
+    font-size: 25px;
+    color: #fff;
+    background: none;
+    text-align: center;
+}
+
+footer {
+    font-family: "Bebas Neue", Arial, sans-serif;
+    color: #555;
+    width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+footer div {
+    float: right;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../fonts/BebasNeue.otf")
+    format("truetype");
+}
